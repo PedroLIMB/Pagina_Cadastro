@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Cadastro</title>
+</head>
+<body>
+    <h1>Pagina de Cadastro</h1><hr>
+
+    <main>
+        <form action="Cadastro.php" method="post" autocomplete="on">
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required minlength="8" maxlength="75" size="30" placeholder="Digite seu nome completo" autocomplete="username">
+            </p>
+            <p>
+                <label for="idata">Data de nascimento:</label>
+                <input type="date" name="data" id="idata">
+            </p>
+            <p>
+                <label for="itelefone">Telefone:</label>
+                <input type="tel" name="telefone" id="itelefone" required minlength="8" maxlength="9" size="28" placeholder="Digite seu telefone" autocomplete="tel">
+            </p><hr>
+            <p>
+                <label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail" required minlength="8" maxlength="40" size="31"
+                placeholder="Digite seu email" autocomplete="email">
+            </p>
+            <p>
+                <label for="iusuario">Usuario:</label>
+                <input type="text" name="usuario" id="iusuario" required minlength="3" maxlength="25" size="29" placeholder="Digite seu nome de usuario" autocomplete="username">
+            </p>
+            <p>
+                <label for="isenha">Senha:</label>
+                <input type="password" name="senha" id="isenha" required minlength="8" maxlength="15"
+                size="31" placeholder="Digite sua senha" autocomplete="current-password">
+            </p>
+            <p>
+                <label for="isenha2">Confirme sua senha:</label>
+                <input type="password" name="senha2" id="isenha2" required minlength="8" maxlength="15" size="18" placeholder="Redigite sua senha" autocomplete="current-password">
+            </p>
+            <p><input type="submit"></p>
+            <p><input type="reset"></p>
+        </form>
+    </main>
+    
+</body>
+</html>
