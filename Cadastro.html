@@ -6,15 +6,15 @@
     <title>Pagina de Cadastro</title>
     <style>
         body{
-            background-color: rgb(32, 13, 49);
-            padding: 100px;
+            background: linear-gradient(purple, rgb(57, 57, 255));
+            padding: 160px;
         }
         main{
-            background-color: rgb(59, 22, 92);
             border-radius: 10px;
             padding-top: 1px;
             padding-left: 10px;
             padding-right: 10px;
+            box-shadow: 10px 5px 5px black;
         }
         section.titulo{
             text-align: center;
@@ -38,11 +38,13 @@
             padding-top: 2px;
             padding-bottom: 2px;
         }
+        p.enviar{
+            text-align: right;
+        }
         input{
             background-color: rgb(255, 255, 255);
             border-radius: 5px;
         }
-        
     </style>
 </head>
 <body>  
@@ -82,8 +84,7 @@
                     <label for="isenha2">Confirme sua senha:</label>
                     <input type="password" name="senha2" id="isenha2" required minlength="8" maxlength="15" size="18" placeholder="Confirme sua senha" autocomplete="current-password">
                 </p>
-                <p><input type="submit"></p>
-                <p><input type="reset"></p>
+                <p class="enviar"><input type="submit"></p>
             </form>
         </section>
     </main>
