@@ -7,20 +7,24 @@
     <style>
         body{
             background: linear-gradient(purple, rgb(57, 57, 255));
-            padding: 100px;
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            display: flex;
         }
         main{
             border-radius: 10px;
-            width: 450px;
-            height: 450px;
+            margin: 0;
             box-shadow: 10px 5px 5px black;
             border: solid;
             position: relative;
-            left: 300px;
+            width: 50vw;
         }
         section.titulo{
             text-align: center;
-            font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             color: rgb(255, 255, 255);
             border-radius: 5px;
         }
@@ -29,20 +33,32 @@
             font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
         }
         p{
-            padding-left: 10px;
-            font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             color: rgb(255, 255, 255);
             border-radius: 5px;
             padding-right: 10px;
-            padding-top: 2px;
-            padding-bottom: 2px;
+            padding-left: 10px;
         }
         p.enviar{
             text-align: right;
         }
         input{
+            background-color: transparent;
+            border-top: transparent;
+            border-right: transparent;
+            border-left: transparent;
+            border-color: rgb(0, 0, 0);
+            color: white;
+        }
+        input.enviar{
             background-color: rgb(255, 255, 255);
-            border-radius: 5px;
+            color: black;
+        }
+        p.mover{
+            text-align: right;
+        }
+        ::placeholder{
+            color: white;
         }
     </style>
 </head>
@@ -52,7 +68,7 @@
             <h1>Seja bem vindo</h1>
         </section>
         <section class="mensagem">
-            <p>Vamos fazer seu cadastro</p><hr>
+            <p>Vamos fazer seu cadastro!</p><hr>
         </section>
 
         <section class="dadosp">
@@ -83,7 +99,7 @@
                     <label for="isenha2">Confirme sua senha:</label>
                     <input type="password" name="senha2" id="isenha2" required minlength="8" maxlength="15" size="18" placeholder="Confirme sua senha" autocomplete="current-password">
                 </p>
-                <p class="enviar"><input type="submit"></p>
+                <p class="mover"><input class="enviar" type="submit"></p>
             </form>
         </section>
     </main>
