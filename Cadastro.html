@@ -19,7 +19,6 @@
             margin: 0;
             box-shadow: 10px 5px 5px black;
             border: solid;
-            position: relative;
             width: 50vw;
         }
         section.titulo{
@@ -39,8 +38,15 @@
             padding-right: 10px;
             padding-left: 10px;
         }
-        p.enviar{
-            text-align: right;
+        div.enviarl{
+            float: right;
+            padding-right: 15px;
+            padding-bottom: 5px;
+        }
+        div.login{
+            float: left;
+            padding-left: 15px;
+            padding-bottom: 5px;
         }
         input{
             background-color: transparent;
@@ -99,7 +105,14 @@
                     <label for="isenha2">Confirme sua senha:</label>
                     <input type="password" name="senha2" id="isenha2" required minlength="8" maxlength="15" size="18" placeholder="Confirme sua senha" autocomplete="current-password">
                 </p>
-                <p class="mover"><input class="enviar" type="submit"></p>
+                <p class="mover">
+                    <div class="enviarl">
+                        <input class="enviar" type="submit">
+                    </div>
+                    <div class="login">
+                        <a href="">Login</a>
+                    </div>
+                </p>
             </form>
         </section>
     </main>
