@@ -3,70 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina de Cadastro</title>
-    <style>
-        body{
-            background: linear-gradient(purple, rgb(57, 57, 255));
-            margin: 0;
-            width: 100vw;
-            height: 100vh;
-            justify-content: center;
-            align-items: center;
-            display: flex;
-        }
-        main{
-            border-radius: 10px;
-            margin: 0;
-            box-shadow: 10px 5px 5px black;
-            border: solid;
-            width: 50vw;
-        }
-        section.titulo{
-            text-align: center;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            color: rgb(255, 255, 255);
-            border-radius: 5px;
-        }
-        section.mensagem{
-            text-align: center;
-            font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-        p{
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            color: rgb(255, 255, 255);
-            border-radius: 5px;
-            padding-right: 10px;
-            padding-left: 10px;
-        }
-        div.enviarl{
-            float: right;
-            padding-right: 15px;
-            padding-bottom: 5px;
-        }
-        div.login{
-            float: left;
-            padding-left: 15px;
-            padding-bottom: 5px;
-        }
-        input{
-            background-color: transparent;
-            border-top: transparent;
-            border-right: transparent;
-            border-left: transparent;
-            border-color: rgb(0, 0, 0);
-            color: white;
-        }
-        input.enviar{
-            background-color: rgb(255, 255, 255);
-            color: black;
-        }
-        p.mover{
-            text-align: right;
-        }
-        ::placeholder{
-            color: white;
-        }
-    </style>
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>  
     <main>
@@ -99,7 +37,8 @@
                 </p>
                 <p>
                     <label for="isenha">Senha:</label>
-                    <input type="password" name="senha" id="isenha" required minlength="8" maxlength="15" size="31" placeholder="Digite sua senha" autocomplete="current-password">
+                    <input type="password" name="senha" id="isenha" required minlength="8" maxlength="15" size="31" placeholder="Digite sua senha" autocomplete="current-password"
+                    >
                 </p>
                 <p>
                     <label for="isenha2">Confirme sua senha:</label>
@@ -110,7 +49,7 @@
                         <input class="enviar" type="submit">
                     </div>
                     <div class="login">
-                        <a href="">Login</a>
+                        <a href="Login.html">Login</a>
                     </div>
                 </p>
             </form>
