@@ -1,5 +1,6 @@
 body{
-    background: linear-gradient(blueviolet, rgb(57, 57, 255));
+    background: linear-gradient(rgb(42, 131, 214), rgb(119, 35, 214)
+    );
     margin: 0;
     width: 100vw;
     height: 100vh;
@@ -62,6 +63,7 @@ p.mover{
 h3{
     color: white;
     text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 a{
     color: rgb(0, 0, 0);
