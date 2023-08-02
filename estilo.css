@@ -53,6 +53,9 @@ input{
 input.enviar{
     background-color: rgb(255, 255, 255);
     color: black;
+    padding: 10px;
+    border: transparent;
+    border-radius: 8px;
 }
 p.mover{
     text-align: right;
