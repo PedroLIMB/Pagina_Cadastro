@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(rgb(42, 131, 214), rgb(119, 35, 214)
+    background-image: linear-gradient(to bottom, #1d26eb, #482ce5, #5f34e0, #703cdb, #7e44d6);
     );
     margin: 0;
     width: 100vw;
