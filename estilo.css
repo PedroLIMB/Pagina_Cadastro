@@ -79,3 +79,6 @@ button.enviar:hover{
     background-color: blue;
     color: white;
 }
+.container{
+    padding:50px;
+}
