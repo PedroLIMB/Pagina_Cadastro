@@ -16,7 +16,6 @@
         </section>
 
         <section class="dadosp">
-            <form action="Cadastro.php" method="post" autocomplete="on">
                 <p>
                     <label for="inome">Nome:</label>
                     <input type="text" name="nome" id="inome" required minlength="8" size="30" placeholder="Digite seu nome completo" autocomplete="username">
@@ -46,13 +45,12 @@
                 </p>
                 <p class="mover">
                     <div class="enviarl">
-                        <button class="enviar">Enviar</button>
+                        <button class="enviar" onclick="validarSenha()">Enviar</button>
                     </div>
                     <div class="login">
                         <a href="Login.html">Login</a>
                     </div>
                 </p>
-            </form>
         </section>
     </main>
     <script src="script.js"></script>
